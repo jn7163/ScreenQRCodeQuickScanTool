@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4985FEF521A3C414005E9B41 /* QRCodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4985FEF421A3C414005E9B41 /* QRCodeUtil.swift */; };
+		4985FEF821A3D67C005E9B41 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4985FEF721A3D67C005E9B41 /* ConfigManager.swift */; };
+		4985FEFA21A3D95B005E9B41 /* NSUserNotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4985FEF921A3D95B005E9B41 /* NSUserNotificationCenter+Extension.swift */; };
 		49E938EB21A255A5001DD493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E938EA21A255A5001DD493 /* AppDelegate.swift */; };
-		49E938ED21A255A5001DD493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E938EC21A255A5001DD493 /* ViewController.swift */; };
 		49E938EF21A255A7001DD493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E938EE21A255A7001DD493 /* Assets.xcassets */; };
 		49E938F221A255A7001DD493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E938F021A255A7001DD493 /* Main.storyboard */; };
+		49FE07D821A4FB0F0063D84A /* QRCodeGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE07D721A4FB0F0063D84A /* QRCodeGeneratorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4985FEF421A3C414005E9B41 /* QRCodeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeUtil.swift; sourceTree = "<group>"; };
+		4985FEF721A3D67C005E9B41 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		4985FEF921A3D95B005E9B41 /* NSUserNotificationCenter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserNotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 		49E938E721A255A5001DD493 /* ScreenQRCodeQuickScanTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenQRCodeQuickScanTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E938EA21A255A5001DD493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49E938EC21A255A5001DD493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49E938EE21A255A7001DD493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E938F121A255A7001DD493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49E938F321A255A7001DD493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E938F421A255A7001DD493 /* ScreenQRCodeQuickScanTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenQRCodeQuickScanTool.entitlements; sourceTree = "<group>"; };
+		49FE07D721A4FB0F0063D84A /* QRCodeGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGeneratorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,14 @@
 			isa = PBXGroup;
 			children = (
 				49E938EA21A255A5001DD493 /* AppDelegate.swift */,
-				49E938EC21A255A5001DD493 /* ViewController.swift */,
+				4985FEF921A3D95B005E9B41 /* NSUserNotificationCenter+Extension.swift */,
+				49FE07D721A4FB0F0063D84A /* QRCodeGeneratorViewController.swift */,
+				4985FEF421A3C414005E9B41 /* QRCodeUtil.swift */,
 				49E938EE21A255A7001DD493 /* Assets.xcassets */,
 				49E938F021A255A7001DD493 /* Main.storyboard */,
 				49E938F321A255A7001DD493 /* Info.plist */,
 				49E938F421A255A7001DD493 /* ScreenQRCodeQuickScanTool.entitlements */,
+				4985FEF721A3D67C005E9B41 /* ConfigManager.swift */,
 			);
 			path = ScreenQRCodeQuickScanTool;
 			sourceTree = "<group>";
@@ -95,6 +104,11 @@
 				TargetAttributes = {
 					49E938E621A255A5001DD493 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -133,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49E938ED21A255A5001DD493 /* ViewController.swift in Sources */,
+				4985FEF521A3C414005E9B41 /* QRCodeUtil.swift in Sources */,
 				49E938EB21A255A5001DD493 /* AppDelegate.swift in Sources */,
+				49FE07D821A4FB0F0063D84A /* QRCodeGeneratorViewController.swift in Sources */,
+				4985FEF821A3D67C005E9B41 /* ConfigManager.swift in Sources */,
+				4985FEFA21A3D95B005E9B41 /* NSUserNotificationCenter+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
